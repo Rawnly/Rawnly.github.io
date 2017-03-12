@@ -1,0 +1,45 @@
+.raleway { font-family: 'Raleway', 'Helvetica'; color: #000; }
+
+.light::selection { background: white; color: black; }
+
+.dark::selection { background: black; color: white; }
+
+h1 { font-family: 'Raleway', 'Helvetica'; padding: 15px; display: block; color: black; }
+
+header { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; width: 100vw; height: 100vh; background: white; display: table; position: relative; position: absolute; }
+
+header:before, header:after { content: ""; display: table; }
+
+header:after { clear: both; }
+
+header #sunglasses { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; font-size: 70px; font-size: 4.375rem; color: black; position: absolute; left: 50%; top: 60%; transform: translateX(-50%); }
+
+header #sunglasses:hover { cursor: pointer; }
+
+header .title { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; }
+
+header .title h1 { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; font-size: 67px; font-size: 4.1875rem; margin: 0 auto; width: 600px; }
+
+header .title h1:before, header .title h1:after { content: ""; display: table; }
+
+header .title h1:after { clear: both; }
+
+@media screen and (max-width: 670px) { header .title h1 { width: 90vw; } }
+
+footer { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; position: absolute; width: 100vw; height: 15vh; color: white; display: table; background: black; z-index: -1; bottom: 0; }
+
+footer .row { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: inherit; padding: 0; margin: 0 auto; display: table; }
+
+footer .row .box { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; width: 75px; height: 75px; display: inline-block; margin: 15px; }
+
+footer .row .box:hover { cursor: pointer !important; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+footer .row .box:active { box-shadow: none; }
+
+footer .row .box.twitter { background: url("assets/twitter.svg") center no-repeat; background-size: 50%; }
+
+footer .row .box.reddit { background: url("assets/reddit.svg") center no-repeat; background-size: 50%; }
+
+footer .row .box.github { background: url("assets/github.svg") center no-repeat; background-size: 50%; }
+
+#hint { transition-duration: 0.3s; transition-timing-function: ease; -webkit-transition-timing-function: ease; position: absolute; width: 100%; text-align: center; margin-top: 10px; top: 68%; left: -0.3%; }
